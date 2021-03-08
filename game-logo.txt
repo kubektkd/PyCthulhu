@@ -1,0 +1,23 @@
+##########################################################################
+#                                ,,    ,,                  ,...          #
+#            .g8"""bgd         `7MM  `7MM                .d' ""          #
+#          .dP'     `M           MM    MM                dM`             #
+#          dM'       ` ,6"Yb.    MM    MM       ,pW"Wq. mMMmm            #
+#          MM         8)   MM    MM    MM      6W'   `Wb MM              #
+#          MM.         ,pm9MM    MM    MM      8M     M8 MM              #
+#          `Mb.     ,'8M   MM    MM    MM      YA.   ,A9 MM              #
+#            `"bmmmd' `Moo9^Yo..JMML..JMML.     `Ybmd9'.JMML.            #
+#                      ,,                    ,,    ,,                    #
+#    .g8"""bgd  mm   `7MM                  `7MM  `7MM     `7MMF'   `7MF' #
+#  .dP'     `M  MM     MM                    MM    MM       MM       M   #
+#  dM'       `mmMMmm   MMpMMMb.`7MM  `7MM    MM    MMpMMMb. MM       M   #
+#  MM           MM     MM    MM  MM    MM    MM    MM    MM MM       M   #
+#  MM.          MM     MM    MM  MM    MM    MM    MM    MM MM       M   #
+#  `Mb.     ,'  MM     MM    MM  MM    MM    MM    MM    MM YM.     ,M   #
+#    `"bmmmd'   `Mbmo.JMML  JMML.`Mbod"YML..JMML..JMML  JMML.`bmmmmd"'   #
+#       _                 _           _          _ _ _   _               #
+#      | |_ ___ _ _ _ __ (_)_ _  __ _| |  ___ __| (_) |_(_)___ _ _       #
+#      |  _/ -_) '_| '  \| | ' \/ _` | | / -_) _` | |  _| / _ \ ' \      #
+#       \__\___|_| |_|_|_|_|_||_\__,_|_| \___\__,_|_|\__|_\___/_||_|     #
+#                                                                        #
+##########################################################################

@@ -1,6 +1,6 @@
 ![Logo](./img/call-of-cthulhu-logo.png)
-<h1 style="text-align:center;margin-top:-90px;margin-left:50px">Terminal Edition</h1>
 
+<h1 style="text-align:center;margin-top:-90px;margin-left:50px">Terminal Edition</h1>
 ---
 
 ## Getting Started

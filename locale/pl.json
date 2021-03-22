@@ -1,0 +1,15 @@
+{
+  "choice": "Wybór > ",
+  "back": "Powrót",
+  "settings": {
+    "title": "USTAWIENIA",
+    "option_1": "Czas pomiędzy akapitami",
+    "option_2": "Zmień język",
+    "option_9": "Przywróć ustawienia domyślne"
+  },
+  "test": {
+    "test2": {
+      "test3": "test text"
+    }
+  }
+}

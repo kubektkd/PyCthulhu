@@ -10,6 +10,12 @@ The game is for now only in **Polish** language version, but I will add translat
 
 You will need Python3 interpreter to run the code - you can get it [**here**](https://www.python.org/downloads/).
 
+#### Required non-standard Libraries
+
+`lolcat` - ver. 1.4
+
+`tabulate` - ver. 0.8.7
+
 ### Installation
 
 Use the package manager [**pip**](https://pip.pypa.io/en/stable/) to install required dependencies.
@@ -25,7 +31,7 @@ python3 pycthulhu.py
 
 ## Authors
 
- - [**Jakub Michniewicz**](https://github.com/kubektkd) - initial work 
+ - [**Jakub Michniewicz**](https://github.com/kubektkd) - idea & initial work 
 
 ## License
 

@@ -1,0 +1,10 @@
+{
+  "choice": "Choice > ",
+  "back": "Back",
+  "settings": {
+    "title": "│    SETTINGS    │",
+    "option_1": "Time between paragraphs",
+    "option_2": "Change language",
+    "option_9": "Reset to default settings"
+  }
+}

@@ -92,7 +92,41 @@ def show_game_logo():
         show_game_logo_alt()
     time.sleep(config.logoSleepTime)
     print(f"\n  Wykonał - {ORANGE}Jakub Michniewicz{NC}                   Wersja - {BRED}{config.APP_VER_NO}{NC}\n")
+    check_terminal_size()
     time.sleep(config.logoSleepTime)
+
+
+def check_terminal_size():
+    cols = config.PREFERRED_COLS
+    rows = config.PREFERRED_ROWS
+
+    try:
+        size = os.get_terminal_size()
+        cur_cols, cur_rows = size.columns, size.lines
+    except OSError:
+        if os.name == 'nt':
+            import subprocess
+            try:
+                result = subprocess.run(
+                    ['mode', 'con'], capture_output=True, text=True, shell=True
+                )
+                cur_cols = cur_rows = None
+                for line in result.stdout.splitlines():
+                    if 'Columns' in line:
+                        cur_cols = int(line.split(':')[-1].strip())
+                    elif 'Lines' in line:
+                        cur_rows = int(line.split(':')[-1].strip())
+                if not cur_cols or not cur_rows:
+                    return
+            except Exception:
+                return
+        else:
+            return
+
+    if cur_cols < cols or cur_rows < rows:
+        print(f"{ORANGE}  [!] Zalecany rozmiar terminala: {cols}x{rows}{NC}")
+        print(f"{ORANGE}      Aktualny rozmiar: {cur_cols}x{cur_rows}{NC}")
+        print(f"{ORANGE}      Powiększ okno terminala dla najlepszych wrażeń.{NC}\n")
 
 
 def read_locale_file(lang):

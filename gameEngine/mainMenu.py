@@ -88,7 +88,7 @@ def new_game():
             player.show_character_stats()
 
         if config.choice == 2:
-            player.create_caracter()
+            player.create_character()
             player.show_character_stats()
 
         if config.choice == 1:

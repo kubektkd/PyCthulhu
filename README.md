@@ -14,7 +14,7 @@ You will need Python3 interpreter to run the code - you can get it [**here**](ht
 
 `lolcat` - ver. 1.4
 
-`tabulate` - ver. 0.8.7
+`tabulate` - ver. 0.10.0
 
 ### Installation
 
@@ -26,6 +26,8 @@ pip install -r requirements.txt
 
 Then you can run the code with
 ```bash
+python pycthulhu.py
+or
 python3 pycthulhu.py
 ```
 

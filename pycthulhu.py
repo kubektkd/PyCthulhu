@@ -1,7 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: UTF-8 -*-
 
-# ? unicode tables - https://www.rapidtables.com/code/text/unicode-characters.html
+import sys
+import os
+
+if os.name == 'nt':
+    sys.stdout.reconfigure(encoding='utf-8')
 
 from gameEngine.mainMenu import *
 import utils.helpers as helpers

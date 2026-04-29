@@ -2,13 +2,14 @@ import os
 import sys
 import time
 import json
+import math
 import textwrap
 import utils.config as config
 from utils.constants import *
 
 
 SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
-clear = lambda: os.system('clear')
+clear = lambda: os.system('cls' if os.name == 'nt' else 'clear')
 logo_file = os.path.join(SCRIPT_DIR, '../assets/game-logo.txt')
 
 
@@ -63,14 +64,31 @@ def print_text(message):
                 print(f"  {text}")
 
 
+def _rainbow_print(text, freq=0.1, spread=3.0):
+    for i, line in enumerate(text.splitlines()):
+        colored = []
+        for j, char in enumerate(line):
+            if char.strip():
+                phase = freq * (i * spread + j)
+                r = int(math.sin(phase + 0) * 127 + 128)
+                g = int(math.sin(phase + 2 * math.pi / 3) * 127 + 128)
+                b = int(math.sin(phase + 4 * math.pi / 3) * 127 + 128)
+                colored.append(f'\033[38;2;{r};{g};{b}m{char}\033[0m')
+            else:
+                colored.append(char)
+        print(''.join(colored))
+
+
 def show_game_logo_alt():
     with open(logo_file, 'r') as fin:
         print(fin.read())
 
 
 def show_game_logo():
-    os_cmd = f'lolcat {SCRIPT_DIR}/../assets/game-logo.txt'
-    if os.system(os_cmd) != 0:
+    try:
+        with open(logo_file, 'r') as fin:
+            _rainbow_print(fin.read())
+    except Exception:
         show_game_logo_alt()
     time.sleep(config.logoSleepTime)
     print(f"\n  Wykonał - {ORANGE}Jakub Michniewicz{NC}                   Wersja - {BRED}{config.APP_VER_NO}{NC}\n")
